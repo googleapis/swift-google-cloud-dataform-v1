@@ -29,15 +29,15 @@ extension Clients {
   protocol DataformStub {
     func getTeamFolder(
       request: GetTeamFolderRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.TeamFolder
+    ) async throws -> GoogleCloudDataFormV1.TeamFolder
 
     func createTeamFolder(
       request: CreateTeamFolderRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.TeamFolder
+    ) async throws -> GoogleCloudDataFormV1.TeamFolder
 
     func updateTeamFolder(
       request: UpdateTeamFolderRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.TeamFolder
+    ) async throws -> GoogleCloudDataFormV1.TeamFolder
 
     func deleteTeamFolder(
       request: DeleteTeamFolderRequest, options: GoogleCloudGax.RequestOptions
@@ -49,23 +49,23 @@ extension Clients {
 
     func queryTeamFolderContents(
       request: QueryTeamFolderContentsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.QueryTeamFolderContentsResponse
+    ) async throws -> GoogleCloudDataFormV1.QueryTeamFolderContentsResponse
 
     func searchTeamFolders(
       request: SearchTeamFoldersRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.SearchTeamFoldersResponse
+    ) async throws -> GoogleCloudDataFormV1.SearchTeamFoldersResponse
 
     func getFolder(
       request: GetFolderRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.Folder
+    ) async throws -> GoogleCloudDataFormV1.Folder
 
     func createFolder(
       request: CreateFolderRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.Folder
+    ) async throws -> GoogleCloudDataFormV1.Folder
 
     func updateFolder(
       request: UpdateFolderRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.Folder
+    ) async throws -> GoogleCloudDataFormV1.Folder
 
     func deleteFolder(
       request: DeleteFolderRequest, options: GoogleCloudGax.RequestOptions
@@ -77,11 +77,11 @@ extension Clients {
 
     func queryFolderContents(
       request: QueryFolderContentsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.QueryFolderContentsResponse
+    ) async throws -> GoogleCloudDataFormV1.QueryFolderContentsResponse
 
     func queryUserRootContents(
       request: QueryUserRootContentsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.QueryUserRootContentsResponse
+    ) async throws -> GoogleCloudDataFormV1.QueryUserRootContentsResponse
 
     func moveFolder(
       request: MoveFolderRequest, options: GoogleCloudGax.RequestOptions
@@ -89,19 +89,19 @@ extension Clients {
 
     func listRepositories(
       request: ListRepositoriesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.ListRepositoriesResponse
+    ) async throws -> GoogleCloudDataFormV1.ListRepositoriesResponse
 
     func getRepository(
       request: GetRepositoryRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.Repository
+    ) async throws -> GoogleCloudDataFormV1.Repository
 
     func createRepository(
       request: CreateRepositoryRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.Repository
+    ) async throws -> GoogleCloudDataFormV1.Repository
 
     func updateRepository(
       request: UpdateRepositoryRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.Repository
+    ) async throws -> GoogleCloudDataFormV1.Repository
 
     func deleteRepository(
       request: DeleteRepositoryRequest, options: GoogleCloudGax.RequestOptions
@@ -113,39 +113,39 @@ extension Clients {
 
     func commitRepositoryChanges(
       request: CommitRepositoryChangesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.CommitRepositoryChangesResponse
+    ) async throws -> GoogleCloudDataFormV1.CommitRepositoryChangesResponse
 
     func readRepositoryFile(
       request: ReadRepositoryFileRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.ReadRepositoryFileResponse
+    ) async throws -> GoogleCloudDataFormV1.ReadRepositoryFileResponse
 
     func queryRepositoryDirectoryContents(
       request: QueryRepositoryDirectoryContentsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.QueryRepositoryDirectoryContentsResponse
+    ) async throws -> GoogleCloudDataFormV1.QueryRepositoryDirectoryContentsResponse
 
     func fetchRepositoryHistory(
       request: FetchRepositoryHistoryRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.FetchRepositoryHistoryResponse
+    ) async throws -> GoogleCloudDataFormV1.FetchRepositoryHistoryResponse
 
     func computeRepositoryAccessTokenStatus(
       request: ComputeRepositoryAccessTokenStatusRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.ComputeRepositoryAccessTokenStatusResponse
+    ) async throws -> GoogleCloudDataFormV1.ComputeRepositoryAccessTokenStatusResponse
 
     func fetchRemoteBranches(
       request: FetchRemoteBranchesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.FetchRemoteBranchesResponse
+    ) async throws -> GoogleCloudDataFormV1.FetchRemoteBranchesResponse
 
     func listWorkspaces(
       request: ListWorkspacesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.ListWorkspacesResponse
+    ) async throws -> GoogleCloudDataFormV1.ListWorkspacesResponse
 
     func getWorkspace(
       request: GetWorkspaceRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.Workspace
+    ) async throws -> GoogleCloudDataFormV1.Workspace
 
     func createWorkspace(
       request: CreateWorkspaceRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.Workspace
+    ) async throws -> GoogleCloudDataFormV1.Workspace
 
     func deleteWorkspace(
       request: DeleteWorkspaceRequest, options: GoogleCloudGax.RequestOptions
@@ -153,87 +153,87 @@ extension Clients {
 
     func installNpmPackages(
       request: InstallNpmPackagesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.InstallNpmPackagesResponse
+    ) async throws -> GoogleCloudDataFormV1.InstallNpmPackagesResponse
 
     func pullGitCommits(
       request: PullGitCommitsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.PullGitCommitsResponse
+    ) async throws -> GoogleCloudDataFormV1.PullGitCommitsResponse
 
     func pushGitCommits(
       request: PushGitCommitsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.PushGitCommitsResponse
+    ) async throws -> GoogleCloudDataFormV1.PushGitCommitsResponse
 
     func fetchFileGitStatuses(
       request: FetchFileGitStatusesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.FetchFileGitStatusesResponse
+    ) async throws -> GoogleCloudDataFormV1.FetchFileGitStatusesResponse
 
     func fetchGitAheadBehind(
       request: FetchGitAheadBehindRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.FetchGitAheadBehindResponse
+    ) async throws -> GoogleCloudDataFormV1.FetchGitAheadBehindResponse
 
     func commitWorkspaceChanges(
       request: CommitWorkspaceChangesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.CommitWorkspaceChangesResponse
+    ) async throws -> GoogleCloudDataFormV1.CommitWorkspaceChangesResponse
 
     func resetWorkspaceChanges(
       request: ResetWorkspaceChangesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.ResetWorkspaceChangesResponse
+    ) async throws -> GoogleCloudDataFormV1.ResetWorkspaceChangesResponse
 
     func fetchFileDiff(
       request: FetchFileDiffRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.FetchFileDiffResponse
+    ) async throws -> GoogleCloudDataFormV1.FetchFileDiffResponse
 
     func queryDirectoryContents(
       request: QueryDirectoryContentsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.QueryDirectoryContentsResponse
+    ) async throws -> GoogleCloudDataFormV1.QueryDirectoryContentsResponse
 
     func searchFiles(
       request: SearchFilesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.SearchFilesResponse
+    ) async throws -> GoogleCloudDataFormV1.SearchFilesResponse
 
     func makeDirectory(
       request: MakeDirectoryRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.MakeDirectoryResponse
+    ) async throws -> GoogleCloudDataFormV1.MakeDirectoryResponse
 
     func removeDirectory(
       request: RemoveDirectoryRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.RemoveDirectoryResponse
+    ) async throws -> GoogleCloudDataFormV1.RemoveDirectoryResponse
 
     func moveDirectory(
       request: MoveDirectoryRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.MoveDirectoryResponse
+    ) async throws -> GoogleCloudDataFormV1.MoveDirectoryResponse
 
     func readFile(
       request: ReadFileRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.ReadFileResponse
+    ) async throws -> GoogleCloudDataFormV1.ReadFileResponse
 
     func removeFile(
       request: RemoveFileRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.RemoveFileResponse
+    ) async throws -> GoogleCloudDataFormV1.RemoveFileResponse
 
     func moveFile(
       request: MoveFileRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.MoveFileResponse
+    ) async throws -> GoogleCloudDataFormV1.MoveFileResponse
 
     func writeFile(
       request: WriteFileRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.WriteFileResponse
+    ) async throws -> GoogleCloudDataFormV1.WriteFileResponse
 
     func listReleaseConfigs(
       request: ListReleaseConfigsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.ListReleaseConfigsResponse
+    ) async throws -> GoogleCloudDataFormV1.ListReleaseConfigsResponse
 
     func getReleaseConfig(
       request: GetReleaseConfigRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.ReleaseConfig
+    ) async throws -> GoogleCloudDataFormV1.ReleaseConfig
 
     func createReleaseConfig(
       request: CreateReleaseConfigRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.ReleaseConfig
+    ) async throws -> GoogleCloudDataFormV1.ReleaseConfig
 
     func updateReleaseConfig(
       request: UpdateReleaseConfigRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.ReleaseConfig
+    ) async throws -> GoogleCloudDataFormV1.ReleaseConfig
 
     func deleteReleaseConfig(
       request: DeleteReleaseConfigRequest, options: GoogleCloudGax.RequestOptions
@@ -241,35 +241,35 @@ extension Clients {
 
     func listCompilationResults(
       request: ListCompilationResultsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.ListCompilationResultsResponse
+    ) async throws -> GoogleCloudDataFormV1.ListCompilationResultsResponse
 
     func getCompilationResult(
       request: GetCompilationResultRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.CompilationResult
+    ) async throws -> GoogleCloudDataFormV1.CompilationResult
 
     func createCompilationResult(
       request: CreateCompilationResultRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.CompilationResult
+    ) async throws -> GoogleCloudDataFormV1.CompilationResult
 
     func queryCompilationResultActions(
       request: QueryCompilationResultActionsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.QueryCompilationResultActionsResponse
+    ) async throws -> GoogleCloudDataFormV1.QueryCompilationResultActionsResponse
 
     func listWorkflowConfigs(
       request: ListWorkflowConfigsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.ListWorkflowConfigsResponse
+    ) async throws -> GoogleCloudDataFormV1.ListWorkflowConfigsResponse
 
     func getWorkflowConfig(
       request: GetWorkflowConfigRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.WorkflowConfig
+    ) async throws -> GoogleCloudDataFormV1.WorkflowConfig
 
     func createWorkflowConfig(
       request: CreateWorkflowConfigRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.WorkflowConfig
+    ) async throws -> GoogleCloudDataFormV1.WorkflowConfig
 
     func updateWorkflowConfig(
       request: UpdateWorkflowConfigRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.WorkflowConfig
+    ) async throws -> GoogleCloudDataFormV1.WorkflowConfig
 
     func deleteWorkflowConfig(
       request: DeleteWorkflowConfigRequest, options: GoogleCloudGax.RequestOptions
@@ -277,15 +277,15 @@ extension Clients {
 
     func listWorkflowInvocations(
       request: ListWorkflowInvocationsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.ListWorkflowInvocationsResponse
+    ) async throws -> GoogleCloudDataFormV1.ListWorkflowInvocationsResponse
 
     func getWorkflowInvocation(
       request: GetWorkflowInvocationRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.WorkflowInvocation
+    ) async throws -> GoogleCloudDataFormV1.WorkflowInvocation
 
     func createWorkflowInvocation(
       request: CreateWorkflowInvocationRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.WorkflowInvocation
+    ) async throws -> GoogleCloudDataFormV1.WorkflowInvocation
 
     func deleteWorkflowInvocation(
       request: DeleteWorkflowInvocationRequest, options: GoogleCloudGax.RequestOptions
@@ -293,19 +293,19 @@ extension Clients {
 
     func cancelWorkflowInvocation(
       request: CancelWorkflowInvocationRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.CancelWorkflowInvocationResponse
+    ) async throws -> GoogleCloudDataFormV1.CancelWorkflowInvocationResponse
 
     func queryWorkflowInvocationActions(
       request: QueryWorkflowInvocationActionsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.QueryWorkflowInvocationActionsResponse
+    ) async throws -> GoogleCloudDataFormV1.QueryWorkflowInvocationActionsResponse
 
     func getConfig(
       request: GetConfigRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.Config
+    ) async throws -> GoogleCloudDataFormV1.Config
 
     func updateConfig(
       request: UpdateConfigRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.Config
+    ) async throws -> GoogleCloudDataFormV1.Config
 
     func getIamPolicy(
       request: GoogleIAMV1.GetIamPolicyRequest, options: GoogleCloudGax.RequestOptions
@@ -354,7 +354,7 @@ extension Clients {
 
     public func getTeamFolder(
       request: GetTeamFolderRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.TeamFolder {
+    ) async throws -> GoogleCloudDataFormV1.TeamFolder {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -369,12 +369,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.TeamFolder.self, from: data)
+        GoogleCloudDataFormV1.TeamFolder.self, from: data)
     }
 
     public func createTeamFolder(
       request: CreateTeamFolderRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.TeamFolder {
+    ) async throws -> GoogleCloudDataFormV1.TeamFolder {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -393,12 +393,12 @@ extension Clients {
       }
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.TeamFolder.self, from: data)
+        GoogleCloudDataFormV1.TeamFolder.self, from: data)
     }
 
     public func updateTeamFolder(
       request: UpdateTeamFolderRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.TeamFolder {
+    ) async throws -> GoogleCloudDataFormV1.TeamFolder {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.teamFolder.map({ $0.name }), !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding(
@@ -420,7 +420,7 @@ extension Clients {
       }
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.TeamFolder.self, from: data)
+        GoogleCloudDataFormV1.TeamFolder.self, from: data)
     }
 
     public func deleteTeamFolder(
@@ -465,7 +465,7 @@ extension Clients {
 
     public func queryTeamFolderContents(
       request: QueryTeamFolderContentsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.QueryTeamFolderContentsResponse {
+    ) async throws -> GoogleCloudDataFormV1.QueryTeamFolderContentsResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.teamFolder as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.team_folder' is not set or is empty")
@@ -485,12 +485,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.QueryTeamFolderContentsResponse.self, from: data)
+        GoogleCloudDataFormV1.QueryTeamFolderContentsResponse.self, from: data)
     }
 
     public func searchTeamFolders(
       request: SearchTeamFoldersRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.SearchTeamFoldersResponse {
+    ) async throws -> GoogleCloudDataFormV1.SearchTeamFoldersResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.location as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.location' is not set or is empty")
@@ -510,12 +510,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.SearchTeamFoldersResponse.self, from: data)
+        GoogleCloudDataFormV1.SearchTeamFoldersResponse.self, from: data)
     }
 
     public func getFolder(
       request: GetFolderRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.Folder {
+    ) async throws -> GoogleCloudDataFormV1.Folder {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -530,12 +530,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.Folder.self, from: data)
+        GoogleCloudDataFormV1.Folder.self, from: data)
     }
 
     public func createFolder(
       request: CreateFolderRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.Folder {
+    ) async throws -> GoogleCloudDataFormV1.Folder {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -554,12 +554,12 @@ extension Clients {
       }
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.Folder.self, from: data)
+        GoogleCloudDataFormV1.Folder.self, from: data)
     }
 
     public func updateFolder(
       request: UpdateFolderRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.Folder {
+    ) async throws -> GoogleCloudDataFormV1.Folder {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.folder.map({ $0.name }), !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.folder.name' is not set or is empty")
@@ -580,7 +580,7 @@ extension Clients {
       }
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.Folder.self, from: data)
+        GoogleCloudDataFormV1.Folder.self, from: data)
     }
 
     public func deleteFolder(
@@ -625,7 +625,7 @@ extension Clients {
 
     public func queryFolderContents(
       request: QueryFolderContentsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.QueryFolderContentsResponse {
+    ) async throws -> GoogleCloudDataFormV1.QueryFolderContentsResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.folder as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.folder' is not set or is empty")
@@ -645,12 +645,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.QueryFolderContentsResponse.self, from: data)
+        GoogleCloudDataFormV1.QueryFolderContentsResponse.self, from: data)
     }
 
     public func queryUserRootContents(
       request: QueryUserRootContentsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.QueryUserRootContentsResponse {
+    ) async throws -> GoogleCloudDataFormV1.QueryUserRootContentsResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.location as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.location' is not set or is empty")
@@ -670,7 +670,7 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.QueryUserRootContentsResponse.self, from: data)
+        GoogleCloudDataFormV1.QueryUserRootContentsResponse.self, from: data)
     }
 
     public func moveFolder(
@@ -697,7 +697,7 @@ extension Clients {
 
     public func listRepositories(
       request: ListRepositoriesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.ListRepositoriesResponse {
+    ) async throws -> GoogleCloudDataFormV1.ListRepositoriesResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -717,12 +717,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.ListRepositoriesResponse.self, from: data)
+        GoogleCloudDataFormV1.ListRepositoriesResponse.self, from: data)
     }
 
     public func getRepository(
       request: GetRepositoryRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.Repository {
+    ) async throws -> GoogleCloudDataFormV1.Repository {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -737,12 +737,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.Repository.self, from: data)
+        GoogleCloudDataFormV1.Repository.self, from: data)
     }
 
     public func createRepository(
       request: CreateRepositoryRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.Repository {
+    ) async throws -> GoogleCloudDataFormV1.Repository {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -763,12 +763,12 @@ extension Clients {
       }
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.Repository.self, from: data)
+        GoogleCloudDataFormV1.Repository.self, from: data)
     }
 
     public func updateRepository(
       request: UpdateRepositoryRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.Repository {
+    ) async throws -> GoogleCloudDataFormV1.Repository {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.repository.map({ $0.name }), !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding(
@@ -790,7 +790,7 @@ extension Clients {
       }
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.Repository.self, from: data)
+        GoogleCloudDataFormV1.Repository.self, from: data)
     }
 
     public func deleteRepository(
@@ -837,7 +837,7 @@ extension Clients {
 
     public func commitRepositoryChanges(
       request: CommitRepositoryChangesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.CommitRepositoryChangesResponse {
+    ) async throws -> GoogleCloudDataFormV1.CommitRepositoryChangesResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -854,12 +854,12 @@ extension Clients {
       req.httpBody = try JSONEncoder().encode(request)
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.CommitRepositoryChangesResponse.self, from: data)
+        GoogleCloudDataFormV1.CommitRepositoryChangesResponse.self, from: data)
     }
 
     public func readRepositoryFile(
       request: ReadRepositoryFileRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.ReadRepositoryFileResponse {
+    ) async throws -> GoogleCloudDataFormV1.ReadRepositoryFileResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -877,12 +877,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.ReadRepositoryFileResponse.self, from: data)
+        GoogleCloudDataFormV1.ReadRepositoryFileResponse.self, from: data)
     }
 
     public func queryRepositoryDirectoryContents(
       request: QueryRepositoryDirectoryContentsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.QueryRepositoryDirectoryContentsResponse {
+    ) async throws -> GoogleCloudDataFormV1.QueryRepositoryDirectoryContentsResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -902,12 +902,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.QueryRepositoryDirectoryContentsResponse.self, from: data)
+        GoogleCloudDataFormV1.QueryRepositoryDirectoryContentsResponse.self, from: data)
     }
 
     public func fetchRepositoryHistory(
       request: FetchRepositoryHistoryRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.FetchRepositoryHistoryResponse {
+    ) async throws -> GoogleCloudDataFormV1.FetchRepositoryHistoryResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -925,12 +925,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.FetchRepositoryHistoryResponse.self, from: data)
+        GoogleCloudDataFormV1.FetchRepositoryHistoryResponse.self, from: data)
     }
 
     public func computeRepositoryAccessTokenStatus(
       request: ComputeRepositoryAccessTokenStatusRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.ComputeRepositoryAccessTokenStatusResponse {
+    ) async throws -> GoogleCloudDataFormV1.ComputeRepositoryAccessTokenStatusResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -945,12 +945,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.ComputeRepositoryAccessTokenStatusResponse.self, from: data)
+        GoogleCloudDataFormV1.ComputeRepositoryAccessTokenStatusResponse.self, from: data)
     }
 
     public func fetchRemoteBranches(
       request: FetchRemoteBranchesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.FetchRemoteBranchesResponse {
+    ) async throws -> GoogleCloudDataFormV1.FetchRemoteBranchesResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -965,12 +965,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.FetchRemoteBranchesResponse.self, from: data)
+        GoogleCloudDataFormV1.FetchRemoteBranchesResponse.self, from: data)
     }
 
     public func listWorkspaces(
       request: ListWorkspacesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.ListWorkspacesResponse {
+    ) async throws -> GoogleCloudDataFormV1.ListWorkspacesResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -990,12 +990,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.ListWorkspacesResponse.self, from: data)
+        GoogleCloudDataFormV1.ListWorkspacesResponse.self, from: data)
     }
 
     public func getWorkspace(
       request: GetWorkspaceRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.Workspace {
+    ) async throws -> GoogleCloudDataFormV1.Workspace {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -1010,12 +1010,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.Workspace.self, from: data)
+        GoogleCloudDataFormV1.Workspace.self, from: data)
     }
 
     public func createWorkspace(
       request: CreateWorkspaceRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.Workspace {
+    ) async throws -> GoogleCloudDataFormV1.Workspace {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -1036,7 +1036,7 @@ extension Clients {
       }
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.Workspace.self, from: data)
+        GoogleCloudDataFormV1.Workspace.self, from: data)
     }
 
     public func deleteWorkspace(
@@ -1059,7 +1059,7 @@ extension Clients {
 
     public func installNpmPackages(
       request: InstallNpmPackagesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.InstallNpmPackagesResponse {
+    ) async throws -> GoogleCloudDataFormV1.InstallNpmPackagesResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.workspace as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.workspace' is not set or is empty")
@@ -1076,12 +1076,12 @@ extension Clients {
       req.httpBody = try JSONEncoder().encode(request)
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.InstallNpmPackagesResponse.self, from: data)
+        GoogleCloudDataFormV1.InstallNpmPackagesResponse.self, from: data)
     }
 
     public func pullGitCommits(
       request: PullGitCommitsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.PullGitCommitsResponse {
+    ) async throws -> GoogleCloudDataFormV1.PullGitCommitsResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -1098,12 +1098,12 @@ extension Clients {
       req.httpBody = try JSONEncoder().encode(request)
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.PullGitCommitsResponse.self, from: data)
+        GoogleCloudDataFormV1.PullGitCommitsResponse.self, from: data)
     }
 
     public func pushGitCommits(
       request: PushGitCommitsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.PushGitCommitsResponse {
+    ) async throws -> GoogleCloudDataFormV1.PushGitCommitsResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -1120,12 +1120,12 @@ extension Clients {
       req.httpBody = try JSONEncoder().encode(request)
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.PushGitCommitsResponse.self, from: data)
+        GoogleCloudDataFormV1.PushGitCommitsResponse.self, from: data)
     }
 
     public func fetchFileGitStatuses(
       request: FetchFileGitStatusesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.FetchFileGitStatusesResponse {
+    ) async throws -> GoogleCloudDataFormV1.FetchFileGitStatusesResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -1140,12 +1140,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.FetchFileGitStatusesResponse.self, from: data)
+        GoogleCloudDataFormV1.FetchFileGitStatusesResponse.self, from: data)
     }
 
     public func fetchGitAheadBehind(
       request: FetchGitAheadBehindRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.FetchGitAheadBehindResponse {
+    ) async throws -> GoogleCloudDataFormV1.FetchGitAheadBehindResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -1162,12 +1162,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.FetchGitAheadBehindResponse.self, from: data)
+        GoogleCloudDataFormV1.FetchGitAheadBehindResponse.self, from: data)
     }
 
     public func commitWorkspaceChanges(
       request: CommitWorkspaceChangesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.CommitWorkspaceChangesResponse {
+    ) async throws -> GoogleCloudDataFormV1.CommitWorkspaceChangesResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -1184,12 +1184,12 @@ extension Clients {
       req.httpBody = try JSONEncoder().encode(request)
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.CommitWorkspaceChangesResponse.self, from: data)
+        GoogleCloudDataFormV1.CommitWorkspaceChangesResponse.self, from: data)
     }
 
     public func resetWorkspaceChanges(
       request: ResetWorkspaceChangesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.ResetWorkspaceChangesResponse {
+    ) async throws -> GoogleCloudDataFormV1.ResetWorkspaceChangesResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -1206,12 +1206,12 @@ extension Clients {
       req.httpBody = try JSONEncoder().encode(request)
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.ResetWorkspaceChangesResponse.self, from: data)
+        GoogleCloudDataFormV1.ResetWorkspaceChangesResponse.self, from: data)
     }
 
     public func fetchFileDiff(
       request: FetchFileDiffRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.FetchFileDiffResponse {
+    ) async throws -> GoogleCloudDataFormV1.FetchFileDiffResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.workspace as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.workspace' is not set or is empty")
@@ -1228,12 +1228,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.FetchFileDiffResponse.self, from: data)
+        GoogleCloudDataFormV1.FetchFileDiffResponse.self, from: data)
     }
 
     public func queryDirectoryContents(
       request: QueryDirectoryContentsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.QueryDirectoryContentsResponse {
+    ) async throws -> GoogleCloudDataFormV1.QueryDirectoryContentsResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.workspace as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.workspace' is not set or is empty")
@@ -1253,12 +1253,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.QueryDirectoryContentsResponse.self, from: data)
+        GoogleCloudDataFormV1.QueryDirectoryContentsResponse.self, from: data)
     }
 
     public func searchFiles(
       request: SearchFilesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.SearchFilesResponse {
+    ) async throws -> GoogleCloudDataFormV1.SearchFilesResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.workspace as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.workspace' is not set or is empty")
@@ -1277,12 +1277,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.SearchFilesResponse.self, from: data)
+        GoogleCloudDataFormV1.SearchFilesResponse.self, from: data)
     }
 
     public func makeDirectory(
       request: MakeDirectoryRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.MakeDirectoryResponse {
+    ) async throws -> GoogleCloudDataFormV1.MakeDirectoryResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.workspace as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.workspace' is not set or is empty")
@@ -1299,12 +1299,12 @@ extension Clients {
       req.httpBody = try JSONEncoder().encode(request)
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.MakeDirectoryResponse.self, from: data)
+        GoogleCloudDataFormV1.MakeDirectoryResponse.self, from: data)
     }
 
     public func removeDirectory(
       request: RemoveDirectoryRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.RemoveDirectoryResponse {
+    ) async throws -> GoogleCloudDataFormV1.RemoveDirectoryResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.workspace as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.workspace' is not set or is empty")
@@ -1321,12 +1321,12 @@ extension Clients {
       req.httpBody = try JSONEncoder().encode(request)
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.RemoveDirectoryResponse.self, from: data)
+        GoogleCloudDataFormV1.RemoveDirectoryResponse.self, from: data)
     }
 
     public func moveDirectory(
       request: MoveDirectoryRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.MoveDirectoryResponse {
+    ) async throws -> GoogleCloudDataFormV1.MoveDirectoryResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.workspace as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.workspace' is not set or is empty")
@@ -1343,12 +1343,12 @@ extension Clients {
       req.httpBody = try JSONEncoder().encode(request)
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.MoveDirectoryResponse.self, from: data)
+        GoogleCloudDataFormV1.MoveDirectoryResponse.self, from: data)
     }
 
     public func readFile(
       request: ReadFileRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.ReadFileResponse {
+    ) async throws -> GoogleCloudDataFormV1.ReadFileResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.workspace as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.workspace' is not set or is empty")
@@ -1366,12 +1366,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.ReadFileResponse.self, from: data)
+        GoogleCloudDataFormV1.ReadFileResponse.self, from: data)
     }
 
     public func removeFile(
       request: RemoveFileRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.RemoveFileResponse {
+    ) async throws -> GoogleCloudDataFormV1.RemoveFileResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.workspace as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.workspace' is not set or is empty")
@@ -1388,12 +1388,12 @@ extension Clients {
       req.httpBody = try JSONEncoder().encode(request)
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.RemoveFileResponse.self, from: data)
+        GoogleCloudDataFormV1.RemoveFileResponse.self, from: data)
     }
 
     public func moveFile(
       request: MoveFileRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.MoveFileResponse {
+    ) async throws -> GoogleCloudDataFormV1.MoveFileResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.workspace as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.workspace' is not set or is empty")
@@ -1410,12 +1410,12 @@ extension Clients {
       req.httpBody = try JSONEncoder().encode(request)
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.MoveFileResponse.self, from: data)
+        GoogleCloudDataFormV1.MoveFileResponse.self, from: data)
     }
 
     public func writeFile(
       request: WriteFileRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.WriteFileResponse {
+    ) async throws -> GoogleCloudDataFormV1.WriteFileResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.workspace as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.workspace' is not set or is empty")
@@ -1432,12 +1432,12 @@ extension Clients {
       req.httpBody = try JSONEncoder().encode(request)
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.WriteFileResponse.self, from: data)
+        GoogleCloudDataFormV1.WriteFileResponse.self, from: data)
     }
 
     public func listReleaseConfigs(
       request: ListReleaseConfigsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.ListReleaseConfigsResponse {
+    ) async throws -> GoogleCloudDataFormV1.ListReleaseConfigsResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -1455,12 +1455,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.ListReleaseConfigsResponse.self, from: data)
+        GoogleCloudDataFormV1.ListReleaseConfigsResponse.self, from: data)
     }
 
     public func getReleaseConfig(
       request: GetReleaseConfigRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.ReleaseConfig {
+    ) async throws -> GoogleCloudDataFormV1.ReleaseConfig {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -1475,12 +1475,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.ReleaseConfig.self, from: data)
+        GoogleCloudDataFormV1.ReleaseConfig.self, from: data)
     }
 
     public func createReleaseConfig(
       request: CreateReleaseConfigRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.ReleaseConfig {
+    ) async throws -> GoogleCloudDataFormV1.ReleaseConfig {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -1502,12 +1502,12 @@ extension Clients {
       }
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.ReleaseConfig.self, from: data)
+        GoogleCloudDataFormV1.ReleaseConfig.self, from: data)
     }
 
     public func updateReleaseConfig(
       request: UpdateReleaseConfigRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.ReleaseConfig {
+    ) async throws -> GoogleCloudDataFormV1.ReleaseConfig {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.releaseConfig.map({ $0.name }), !pathVariable0.isEmpty
         else {
@@ -1530,7 +1530,7 @@ extension Clients {
       }
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.ReleaseConfig.self, from: data)
+        GoogleCloudDataFormV1.ReleaseConfig.self, from: data)
     }
 
     public func deleteReleaseConfig(
@@ -1553,7 +1553,7 @@ extension Clients {
 
     public func listCompilationResults(
       request: ListCompilationResultsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.ListCompilationResultsResponse {
+    ) async throws -> GoogleCloudDataFormV1.ListCompilationResultsResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -1573,12 +1573,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.ListCompilationResultsResponse.self, from: data)
+        GoogleCloudDataFormV1.ListCompilationResultsResponse.self, from: data)
     }
 
     public func getCompilationResult(
       request: GetCompilationResultRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.CompilationResult {
+    ) async throws -> GoogleCloudDataFormV1.CompilationResult {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -1593,12 +1593,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.CompilationResult.self, from: data)
+        GoogleCloudDataFormV1.CompilationResult.self, from: data)
     }
 
     public func createCompilationResult(
       request: CreateCompilationResultRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.CompilationResult {
+    ) async throws -> GoogleCloudDataFormV1.CompilationResult {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -1617,12 +1617,12 @@ extension Clients {
       }
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.CompilationResult.self, from: data)
+        GoogleCloudDataFormV1.CompilationResult.self, from: data)
     }
 
     public func queryCompilationResultActions(
       request: QueryCompilationResultActionsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.QueryCompilationResultActionsResponse {
+    ) async throws -> GoogleCloudDataFormV1.QueryCompilationResultActionsResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -1641,12 +1641,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.QueryCompilationResultActionsResponse.self, from: data)
+        GoogleCloudDataFormV1.QueryCompilationResultActionsResponse.self, from: data)
     }
 
     public func listWorkflowConfigs(
       request: ListWorkflowConfigsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.ListWorkflowConfigsResponse {
+    ) async throws -> GoogleCloudDataFormV1.ListWorkflowConfigsResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -1664,12 +1664,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.ListWorkflowConfigsResponse.self, from: data)
+        GoogleCloudDataFormV1.ListWorkflowConfigsResponse.self, from: data)
     }
 
     public func getWorkflowConfig(
       request: GetWorkflowConfigRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.WorkflowConfig {
+    ) async throws -> GoogleCloudDataFormV1.WorkflowConfig {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -1684,12 +1684,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.WorkflowConfig.self, from: data)
+        GoogleCloudDataFormV1.WorkflowConfig.self, from: data)
     }
 
     public func createWorkflowConfig(
       request: CreateWorkflowConfigRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.WorkflowConfig {
+    ) async throws -> GoogleCloudDataFormV1.WorkflowConfig {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -1711,12 +1711,12 @@ extension Clients {
       }
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.WorkflowConfig.self, from: data)
+        GoogleCloudDataFormV1.WorkflowConfig.self, from: data)
     }
 
     public func updateWorkflowConfig(
       request: UpdateWorkflowConfigRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.WorkflowConfig {
+    ) async throws -> GoogleCloudDataFormV1.WorkflowConfig {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.workflowConfig.map({ $0.name }), !pathVariable0.isEmpty
         else {
@@ -1739,7 +1739,7 @@ extension Clients {
       }
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.WorkflowConfig.self, from: data)
+        GoogleCloudDataFormV1.WorkflowConfig.self, from: data)
     }
 
     public func deleteWorkflowConfig(
@@ -1762,7 +1762,7 @@ extension Clients {
 
     public func listWorkflowInvocations(
       request: ListWorkflowInvocationsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.ListWorkflowInvocationsResponse {
+    ) async throws -> GoogleCloudDataFormV1.ListWorkflowInvocationsResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -1782,12 +1782,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.ListWorkflowInvocationsResponse.self, from: data)
+        GoogleCloudDataFormV1.ListWorkflowInvocationsResponse.self, from: data)
     }
 
     public func getWorkflowInvocation(
       request: GetWorkflowInvocationRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.WorkflowInvocation {
+    ) async throws -> GoogleCloudDataFormV1.WorkflowInvocation {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -1802,12 +1802,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.WorkflowInvocation.self, from: data)
+        GoogleCloudDataFormV1.WorkflowInvocation.self, from: data)
     }
 
     public func createWorkflowInvocation(
       request: CreateWorkflowInvocationRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.WorkflowInvocation {
+    ) async throws -> GoogleCloudDataFormV1.WorkflowInvocation {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -1826,7 +1826,7 @@ extension Clients {
       }
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.WorkflowInvocation.self, from: data)
+        GoogleCloudDataFormV1.WorkflowInvocation.self, from: data)
     }
 
     public func deleteWorkflowInvocation(
@@ -1849,7 +1849,7 @@ extension Clients {
 
     public func cancelWorkflowInvocation(
       request: CancelWorkflowInvocationRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.CancelWorkflowInvocationResponse {
+    ) async throws -> GoogleCloudDataFormV1.CancelWorkflowInvocationResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -1866,12 +1866,12 @@ extension Clients {
       req.httpBody = try JSONEncoder().encode(request)
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.CancelWorkflowInvocationResponse.self, from: data)
+        GoogleCloudDataFormV1.CancelWorkflowInvocationResponse.self, from: data)
     }
 
     public func queryWorkflowInvocationActions(
       request: QueryWorkflowInvocationActionsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.QueryWorkflowInvocationActionsResponse {
+    ) async throws -> GoogleCloudDataFormV1.QueryWorkflowInvocationActionsResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -1889,12 +1889,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.QueryWorkflowInvocationActionsResponse.self, from: data)
+        GoogleCloudDataFormV1.QueryWorkflowInvocationActionsResponse.self, from: data)
     }
 
     public func getConfig(
       request: GetConfigRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.Config {
+    ) async throws -> GoogleCloudDataFormV1.Config {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -1909,12 +1909,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.Config.self, from: data)
+        GoogleCloudDataFormV1.Config.self, from: data)
     }
 
     public func updateConfig(
       request: UpdateConfigRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudDataformV1.Config {
+    ) async throws -> GoogleCloudDataFormV1.Config {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.config.map({ $0.name }), !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.config.name' is not set or is empty")
@@ -1935,7 +1935,7 @@ extension Clients {
       }
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudDataformV1.Config.self, from: data)
+        GoogleCloudDataFormV1.Config.self, from: data)
     }
 
     public func getIamPolicy(
