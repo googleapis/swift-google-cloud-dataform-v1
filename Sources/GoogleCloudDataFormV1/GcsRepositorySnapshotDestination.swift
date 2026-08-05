@@ -17,18 +17,15 @@
 import Foundation
 import GoogleCloudWkt
 
-/// `InstallNpmPackages` request message.
-public struct InstallNpmPackagesRequest: Codable, Equatable, GoogleCloudWkt._AnyPackable,
+/// Configures the destination for a repository snapshot.
+public struct GcsRepositorySnapshotDestination: Codable, Equatable, GoogleCloudWkt._AnyPackable,
   Sendable
 {
-  /// Required. The workspace's name.
-  public var workspace: Swift.String = Swift.String()
+  /// Optional. The Google Cloud Storage destination to upload the repository
+  /// snapshot to. Format: `gs://bucket-name/path/`.
+  public var repositorySnapshotUri: Swift.String = Swift.String()
 
-  /// Optional. The pipeline options which defines the pipeline type and path
-  /// within the Git repository.
-  public var pipelineConfig: PipelineConfig? = nil
-
-  /// Initialize a new instance of `InstallNpmPackagesRequest`.
+  /// Initialize a new instance of `GcsRepositorySnapshotDestination`.
   public init() {}
 
   /// Use `config` to return a new instance of this object, with some fields updated.
@@ -36,7 +33,7 @@ public struct InstallNpmPackagesRequest: Codable, Equatable, GoogleCloudWkt._Any
   /// Commonly used to initialize the value, for example:
   ///
   /// ```
-  /// let value = InstallNpmPackagesRequest().with { $0.workspace = ... }
+  /// let value = GcsRepositorySnapshotDestination().with { $0.repositorySnapshotUri = ... }
   /// ```
   public func with(_ config: (inout Self) throws -> Swift.Void) rethrows -> Self {
     var copy = self
@@ -45,7 +42,7 @@ public struct InstallNpmPackagesRequest: Codable, Equatable, GoogleCloudWkt._Any
   }
 
   public static var _anyTypeUrl: Swift.String {
-    return "type.googleapis.com/google.cloud.dataform.v1.InstallNpmPackagesRequest"
+    return "type.googleapis.com/google.cloud.dataform.v1.GcsRepositorySnapshotDestination"
   }
   public init(fromAny any: GoogleCloudWkt.`Any`) throws {
     self = try GoogleCloudWkt._slowAnyDeserialize(Self.self, from: any)
